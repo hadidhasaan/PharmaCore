@@ -1,0 +1,6 @@
+Options -MultiViews
+RewriteEngine On
+RewriteRule ^$ public/ [L]
+RewriteRule ^public(?:/.*)?$ - [L]
+RewriteRule ^favicon\.ico(?:\?.*)?$ public/favicon.ico [L,NC]
+RewriteRule ^(.+)$ public/$1 [L]

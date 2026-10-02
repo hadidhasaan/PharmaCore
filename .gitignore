@@ -1,0 +1,24 @@
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Runtime storage (never commit live backups/imports/logs)
+storage/backups/*
+storage/imports/*
+storage/logs/*
+!storage/backups/.gitkeep
+!storage/imports/.gitkeep
+
+# Local editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary / backup source files
+*.bak
+*.old
+*.orig
+*.tmp
+*.swp
